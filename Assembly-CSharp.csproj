@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Script\GameStartButton.cs" />
     <Compile Include="Assets\Script\dd.cs" />
+    <Compile Include="Assets\Script\NewBehaviourScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
