@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{39431328-D3AD-4C8C-21E9-AE8744DB961F}</ProjectGuid>
+    <ProjectGuid>{4527A285-25DA-4002-C385-969614422EA5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Script\GameStartButton.cs" />
     <Compile Include="Assets\Script\dd.cs" />
+    <Compile Include="Assets\Script\Stage01.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
