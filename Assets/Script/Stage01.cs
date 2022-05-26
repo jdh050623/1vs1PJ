@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;//유니티 엔진의 이벤트 시스템을 불러옴
+using UnityEngine.EventSystems;
+using System.Threading;
 
 public class Stage01 : MonoBehaviour
 {
@@ -25,6 +26,8 @@ public class Stage01 : MonoBehaviour
         {
             //wrong 을 클릭한 버튼 위치값에 클릭한 버튼 회전값으로 Hierarchy창 Canvas안에 소환
             Instantiate(wrong, EventSystem.current.currentSelectedGameObject.transform.position, EventSystem.current.currentSelectedGameObject.transform.rotation, GameObject.Find("Canvas").transform);
+            
+            Debug.Log("dd");
         }
     }
 }
