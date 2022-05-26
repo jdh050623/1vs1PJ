@@ -58,9 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Script\GameStartButton.cs" />
     <Compile Include="Assets\Script\Stage01.cs" />
-    <Compile Include="Assets\Script\dd.cs" />
-    <Compile Include="Assets\Script\CameraFix.cs" />
-    <Compile Include="Assets\Script\StageButton.cs" />
+    <Compile Include="Assets\Script\WrongAnimal.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
