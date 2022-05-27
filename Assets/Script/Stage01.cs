@@ -24,7 +24,7 @@ public class Stage01 : MonoBehaviour
         if (EventSystem.current.currentSelectedGameObject.tag == "ForestAnimals")
         {
             //Right 를 클릭한 버튼 위치값에 클릭한 버튼 회전값으로 Hierarchy창 Canvas안에 소환
-            Instantiate(Right, EventSystem.current.currentSelectedGameObject.transform.position, EventSystem.current.currentSelectedGameObject.transform.rotation, GameObject.Find("Canvas").transform);
+            Instantiate(Right, EventSystem.current.currentSelectedGameObject.transform.position, EventSystem.current.currentSelectedGameObject.transform.rotation, GameObject.Find("Canvas/ClickObj").transform);
             EventSystem.current.currentSelectedGameObject.tag = "CorrectAnimal";
             number_of_Correctanimals++; //맞춘 동물의 수 1증가
         }
@@ -32,7 +32,7 @@ public class Stage01 : MonoBehaviour
         if (EventSystem.current.currentSelectedGameObject.tag != "CorrectAnimal" && EventSystem.current.currentSelectedGameObject.tag != "ForestAnimals")
         {
             //wrong 을 클릭한 버튼 위치값에 클릭한 버튼 회전값으로 Hierarchy창 Canvas안에 소환
-            Instantiate(Wrong, EventSystem.current.currentSelectedGameObject.transform.position, EventSystem.current.currentSelectedGameObject.transform.rotation, GameObject.Find("Canvas").transform);
+            Instantiate(Wrong, EventSystem.current.currentSelectedGameObject.transform.position, EventSystem.current.currentSelectedGameObject.transform.rotation, GameObject.Find("Canvas/ClickObj").transform);
                 
             Debug.Log("d");
         }

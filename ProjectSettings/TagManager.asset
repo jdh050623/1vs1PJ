@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ForestAnimals
   - CorrectAnimal
+  - MountainAnimals
   layers:
   - Default
   - TransparentFX
