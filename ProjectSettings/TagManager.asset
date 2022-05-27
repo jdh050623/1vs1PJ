@@ -7,6 +7,10 @@ TagManager:
   - ForestAnimals
   - CorrectAnimal
   - MountainAnimals
+  - BeachAnimals
+  - N_IceAnimals
+  - DesertAnimals
+  - S_IceAnimals
   layers:
   - Default
   - TransparentFX
