@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class TEST2 : MonoBehaviour
 {
-    public GameObject Owl;
-    public GameObject Raccoon;
+    public GameObject Animal_1;
+    public GameObject Animal_2;
     public GameObject[] WrongAnimal;
     public Transform[] SpawnPoints;
 
@@ -45,8 +45,8 @@ public class TEST2 : MonoBehaviour
 
         Instantiate(WrongAnimal[ranAnimal], SpawnPoints[ranPoint].position, SpawnPoints[ranPoint].rotation, GameObject.Find("Canvas/OBGGroup").transform);
         Instantiate(WrongAnimal[ranAnimal], SpawnPoints[ranPoint3].position, SpawnPoints[ranPoint3].rotation, GameObject.Find("Canvas/OBGGroup").transform);
-        Instantiate(Owl, SpawnPoints[ranPoint1].position, SpawnPoints[ranPoint1].rotation, GameObject.Find("Canvas/OBGGroup").transform);
-        Instantiate(Raccoon, SpawnPoints[ranPoint2].position, SpawnPoints[ranPoint2].rotation, GameObject.Find("Canvas/OBGGroup").transform);
+        Instantiate(Animal_1, SpawnPoints[ranPoint1].position, SpawnPoints[ranPoint1].rotation, GameObject.Find("Canvas/OBGGroup").transform);
+        Instantiate(Animal_2, SpawnPoints[ranPoint2].position, SpawnPoints[ranPoint2].rotation, GameObject.Find("Canvas/OBGGroup").transform);
     }
 
     IEnumerator Corutin()
