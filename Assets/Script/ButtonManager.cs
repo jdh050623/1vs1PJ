@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ButtonManager : MonoBehaviour
 {
+    public GameObject Out;
     public void NextBT01()
     {
         SceneManager.LoadScene("Stage02");
@@ -31,6 +32,14 @@ public class ButtonManager : MonoBehaviour
     }
 
     public void OutBT()
+    {
+        Out.SetActive(true);
+    }
+    public void NoOutBT()
+    {
+        Out.SetActive(false);
+    }
+    public void YesOutBT()
     {
         SceneManager.LoadScene("StageSelect");
     }
