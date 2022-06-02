@@ -11,6 +11,7 @@ TagManager:
   - N_IceAnimals
   - DesertAnimals
   - S_IceAnimals
+  - Owl
   layers:
   - Default
   - TransparentFX
