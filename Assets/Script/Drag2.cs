@@ -6,6 +6,8 @@ using UnityEngine.EventSystems;
 transform.position = Vector3.SmoothDamp(transform.position, Animal_Pos, ref velo, 0.05f);*/
 public class Drag2 : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler, IDropHandler
 {
+    public static Drag2 instance;
+
     RectTransform rectTransform;
     CanvasGroup canvasGroup;
     [SerializeField] Canvas canvas;
@@ -15,26 +17,23 @@ public class Drag2 : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEnd
     bool Clear = false;//클리어 했을때 켜지는 함수
     bool Destory = false;//켜지면 삭제하게 해주는 함수
 
-    public int ClearCount = 0;//몇번 답을 맞췄는지에 세준다
-
     public GameObject AnimalShadow;
-    public GameObject AnimalPos;
     public GameObject DifferentShadow;
     Vector3 Animal_Pos;
 
     public void Start()
     {
-        Instantiate(AnimalPos, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity, GameObject.Find("Canvas/PosGroup").transform);
+        GameManager_1.instance.ClearCount = 0;
         Animal_Pos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
     }
     private void Update()
     {
         GoBack();
         ClearAnimal();
-        if(ClearCount == 2)
+        /*if(ClearCount == 2)
         {
             //SceneManager.LoadScene("");
-        }
+        }*/
     }
     private void GoBack()//드래그를 놓았을때 오브젝트를 원래 장소로 돌아가게 해줌
     {
@@ -51,26 +50,30 @@ public class Drag2 : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEnd
         {
             transform.position = Vector3.MoveTowards(new Vector3(transform.position.x, transform.position.y, transform.position.z),
                 new Vector3(AnimalShadow.transform.position.x, AnimalShadow.transform.position.y, 0), 3f);
-            StartCoroutine("del");
+            StartCoroutine("Stop");
             if (Destory == true)
             {
+                
                 Debug.Log("d??");
                 Destroy(this.gameObject);
-                Destroy(AnimalShadow);
-                if(ClearCount == 0)
+                AnimalShadow.SetActive(false);
+                if(GameManager_1.instance.ClearCount == 0)
                 {
-                    Instantiate(DifferentShadow, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity, GameObject.Find("Canvas/ShadowGroup").transform);
-                    ClearCount += 1;
+                    StartCoroutine("Stop");
+                    DifferentShadow.SetActive(true);
                 }
+                Debug.Log("아잉");
+ 
+                GameManager_1.instance.ClearCount += 1;
                 Destory = false;
                 
             }
             
         }
     }
-    IEnumerator del()
+    IEnumerator Stop()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.5f);
         Destory = true;
     }
     public void OnTriggerEnter2D(Collider2D collision)
@@ -86,6 +89,7 @@ public class Drag2 : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEnd
     }
     private void Awake()
     {
+        instance = this;
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
     }

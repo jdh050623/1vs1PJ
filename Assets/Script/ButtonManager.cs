@@ -31,6 +31,30 @@ public class ButtonManager : MonoBehaviour
         SceneManager.LoadScene("Stage06");
     }
 
+    public void NextBT01_1()
+    {
+        SceneManager.LoadScene("Stage02_1");
+    }
+
+    public void NextBT02_1()
+    {
+        SceneManager.LoadScene("Stage03_1");
+    }
+
+    public void NextBT03_1()
+    {
+        SceneManager.LoadScene("Stage04_1");
+    }
+
+    public void NextBT04_1()
+    {
+        SceneManager.LoadScene("Stage05_1");
+    }
+
+    public void NextBT05_1()
+    {
+        SceneManager.LoadScene("Stage06_1");
+    }
     public void OutBT()
     {
         Out.SetActive(true);
@@ -42,5 +66,6 @@ public class ButtonManager : MonoBehaviour
     public void YesOutBT()
     {
         SceneManager.LoadScene("StageSelect");
+        GameManager_1.instance.ClearCount = 0;
     }
 }

@@ -1,68 +1,79 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class Drag : MonoBehaviour
+using UnityEngine.EventSystems;
+/*Vector3 velo = Vector3.zero;
+transform.position = Vector3.SmoothDamp(transform.position, Animal_Pos, ref velo, 0.05f);*/
+public class Drag : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler, IDropHandler
 {
-    float distance = 10;
+    RectTransform rectTransform;
+    CanvasGroup canvasGroup;
+    [SerializeField] Canvas canvas;
 
-    bool DragOn = false;//드래그를 하는중일때 켜지는 함수
+    bool DragOn = false;//드래그를 하고 있을때 켜지는 함수
     bool DragOut = false;//드래그를 못하게 하는 함수
-    bool Clear = false;//클리어 했을때 켜지는 함수
 
-    public Vector3 StartZone;
-    
-    //public Vector3 ClearZone;
+    Vector3 Animal_Pos;
 
-    public GameObject AnimalShadow;
-    public GameObject Animal;
+    public void Start()
+    {
+        Animal_Pos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+    }
     private void Update()
     {
         GoBack();
-        ClearAni();
     }
-    private void OnMouseDrag() //드래그를 할 수 있게 해주는 코드이다 쓰기 위해선 이미지에 Collider를 추가해야 한다.
-    {
-        if(DragOut == false)
-        {
-            //Debug.Log("드래그 적용중");
-            DragOn = true;
-            Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance);
-            Vector3 objPosition = Camera.main.ScreenToWorldPoint(mousePosition); transform.position = objPosition;
-        }
-    }
-    private void OnMouseUp()
-    {
-        //Debug.Log("드래그 중지");
-        DragOn = false;
-    }
-
     private void GoBack()//드래그를 놓았을때 오브젝트를 원래 장소로 돌아가게 해줌
     {
-        if (DragOn == false && Clear == false)//
+        if (DragOn == false)//
         {
             Vector3 velo = Vector3.zero;
-            transform.position = Vector3.SmoothDamp(transform.position, StartZone, ref velo, 0.05f);
+            transform.position = Vector3.SmoothDamp(transform.position, Animal_Pos, ref velo, 0.05f);
         }
     }
-    private void ClearAni()//
+    private void Awake()
     {
-        if(Clear == true)
-        {
-            transform.position = Vector3.MoveTowards(new Vector3(transform.position.x,transform.position.y,transform.position.z), new Vector3(AnimalShadow.transform.position.x, AnimalShadow.transform.position.y, -0.1f), 0.05f);
-            
-        }
+        rectTransform = GetComponent<RectTransform>();
+        canvasGroup = GetComponent<CanvasGroup>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)//
+
+    public void OnBeginDrag(PointerEventData eventData)
     {
-        //if(collision.name == "Owl")
-        if(collision.gameObject == AnimalShadow)
+        if (DragOut == false)
         {
-            Clear = true;
-            DragOut = true;
-            Debug.Log("클리어");
+            DragOn = true;
+            //canvasGroup.alpha = .6f;
+            canvasGroup.blocksRaycasts = false;
         }
-        
+
+    }
+    public void OnDrag(PointerEventData eventData)
+    {
+        if (DragOut == false)
+        {
+            DragOn = true;
+            // 이전 이동과 비교해서 얼마나 이동했는지를 보여줌
+            // 캔버스의 스케일과 맞춰야 하기 때문에
+            rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
+        }
+    }
+    public void OnEndDrag(PointerEventData eventData)
+    {
+        DragOn = false;
+        canvasGroup.alpha = 1f;
+        canvasGroup.blocksRaycasts = true;
+        /*transform.position = Vector3.MoveTowards(new Vector3(transform.position.x, transform.position.y, transform.position.z),
+                new Vector3(AnimalPos.transform.position.x, AnimalPos.transform.position.y, 0), 1f);*/
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        DragOn = true;
+    }
+
+    public void OnDrop(PointerEventData eventData)
+    {
+        DragOn = true;
     }
 }

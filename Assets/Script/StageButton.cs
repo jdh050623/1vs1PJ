@@ -33,4 +33,34 @@ public class StageButton : MonoBehaviour
     {
         SceneManager.LoadScene("Stage06");
     }
+
+    public void Stage01_1()
+    {
+        SceneManager.LoadScene("Stage01_1");
+    }
+
+    public void Stage02_1()
+    {
+        SceneManager.LoadScene("Stage02_1");
+    }
+
+    public void Stage03_1()
+    {
+        SceneManager.LoadScene("Stage03_1");
+    }
+
+    public void Stage04_1()
+    {
+        SceneManager.LoadScene("Stage04_1");
+    }
+
+    public void Stage05_1()
+    {
+        SceneManager.LoadScene("Stage05_1");
+    }
+
+    public void Stage06_1()
+    {
+        SceneManager.LoadScene("Stage06_1");
+    }
 }

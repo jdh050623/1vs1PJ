@@ -9,10 +9,13 @@ public class Spawn_1 : MonoBehaviour
     public GameObject[] WrongAnimal;
     public GameObject[] Shadow;
 
+    public int Num;
+
     public Transform[] SpawnPoints;
     public Transform SpawnShadow;
 
     int ranAnimal;
+    int ranAnimal1;
     int ranPoint;
     int ranPoint1;
     int ranPoint2;
@@ -28,7 +31,8 @@ public class Spawn_1 : MonoBehaviour
 
     void SpawnAnimal()
     {
-        ranAnimal = Random.Range(0, 2);
+        ranAnimal = Random.Range(0, Num);
+        ranAnimal1 = Random.Range(0, Num);
         ranPoint = Random.Range(0, 7);
         ranPoint1 = Random.Range(0, 7);
         ranPoint2 = Random.Range(0, 7);
@@ -47,9 +51,9 @@ public class Spawn_1 : MonoBehaviour
         Debug.Log(ranPoint2);
         Debug.Log(ranPoint3);
 
-        Instantiate(Shadow[ranShadowpoint], SpawnShadow.transform.position, SpawnShadow.transform.rotation, GameObject.Find("Canvas/OBGGroup").transform);
+        Shadow[ranShadowpoint].SetActive(true);
         Instantiate(WrongAnimal[ranAnimal], SpawnPoints[ranPoint].position, SpawnPoints[ranPoint].rotation, GameObject.Find("Canvas/OBGGroup").transform);
-        Instantiate(WrongAnimal[ranAnimal], SpawnPoints[ranPoint3].position, SpawnPoints[ranPoint3].rotation, GameObject.Find("Canvas/OBGGroup").transform);
+        Instantiate(WrongAnimal[ranAnimal1], SpawnPoints[ranPoint3].position, SpawnPoints[ranPoint3].rotation, GameObject.Find("Canvas/OBGGroup").transform);
         Instantiate(Animal_1, SpawnPoints[ranPoint1].position, SpawnPoints[ranPoint1].rotation, GameObject.Find("Canvas/OBGGroup").transform);
         Instantiate(Animal_2, SpawnPoints[ranPoint2].position, SpawnPoints[ranPoint2].rotation, GameObject.Find("Canvas/OBGGroup").transform);
 
