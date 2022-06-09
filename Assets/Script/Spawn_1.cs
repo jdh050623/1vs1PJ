@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawn_1 : MonoBehaviour
+public class Spawn_1 : MonoBehaviour //스테이지 n-1의 스폰 스크립트
 {
     public GameObject Animal_1;
     public GameObject Animal_2;
