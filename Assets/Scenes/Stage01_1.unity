@@ -211,7 +211,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: abaf6d19fbd8bb54580dd4f11e40164d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 75790aa32bc35224d8fb8febeb356e24, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3996,7 +3996,7 @@ GameObject:
   - component: {fileID: 2001732903}
   - component: {fileID: 2001732902}
   m_Layer: 5
-  m_Name: OwlShadow (1)
+  m_Name: RaccoonsShadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4088,7 +4088,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 75790aa32bc35224d8fb8febeb356e24, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4545,7 +4545,7 @@ PrefabInstance:
     - target: {fileID: 8290622178961626306, guid: 784903feb4d5f61428225327bb027694, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: abaf6d19fbd8bb54580dd4f11e40164d, type: 3}
+      objectReference: {fileID: 21300000, guid: 75790aa32bc35224d8fb8febeb356e24, type: 3}
     - target: {fileID: 8290622178961626309, guid: 784903feb4d5f61428225327bb027694, type: 3}
       propertyPath: m_Name
       value: TestAnimal (1)

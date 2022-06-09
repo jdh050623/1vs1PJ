@@ -3950,7 +3950,6 @@ GameObject:
   - component: {fileID: 1870340051}
   - component: {fileID: 1870340056}
   - component: {fileID: 1870340055}
-  - component: {fileID: 1870340054}
   - component: {fileID: 1870340053}
   - component: {fileID: 1870340052}
   m_Layer: 5
@@ -4004,21 +4003,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1483370677}
---- !u!114 &1870340054
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1870340050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3aaf7f4fc4a88f48963c01ae9173bb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
-  AnimalShadow: {fileID: 0}
-  DifferentShadow: {fileID: 0}
 --- !u!114 &1870340055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4039,7 +4023,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: abaf6d19fbd8bb54580dd4f11e40164d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 75790aa32bc35224d8fb8febeb356e24, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
