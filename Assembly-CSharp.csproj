@@ -64,6 +64,7 @@
     <Compile Include="Assets\Script\Stage01_1.cs" />
     <Compile Include="Assets\TestWould\TW_Move.cs" />
     <Compile Include="Assets\Script\Stage01.cs" />
+    <Compile Include="Assets\Script\Stage01_0\Stage0n_0.cs" />
     <Compile Include="Assets\Script\TEST1.cs" />
     <Compile Include="Assets\Script\Stage05.cs" />
     <Compile Include="Assets\Script\Stage03.cs" />
@@ -76,7 +77,9 @@
     <Compile Include="Assets\Script\Spawn_1.cs" />
     <Compile Include="Assets\TestWould\TRTT.cs" />
     <Compile Include="Assets\Script\StageButton.cs" />
-    <Compile Include="Assets\Script\Stage01_0\Stage01_0.cs" />
+    <Compile Include="Assets\Script\Stage01_0\GameManagerN_0.cs" />
+    <Compile Include="Assets\Script\Stage01_0\BTClick.cs" />
+    <Compile Include="Assets\Script\Stage01_0\PassAnimal.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

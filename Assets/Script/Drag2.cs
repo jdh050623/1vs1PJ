@@ -66,9 +66,7 @@ public class Drag2 : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEnd
  
                 GameManager_1.instance.ClearCount += 1;
                 Destory = false;
-                
-            }
-            
+            }    
         }
     }
     IEnumerator Stop()
@@ -78,7 +76,6 @@ public class Drag2 : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEnd
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
-
         //if (collision.tag == "Owl")
         if (collision.gameObject == AnimalShadow)
         {
@@ -93,8 +90,6 @@ public class Drag2 : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEnd
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
     }
-
-
     public void OnBeginDrag(PointerEventData eventData)
     {
         if(DragOut == false)
@@ -105,7 +100,6 @@ public class Drag2 : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEnd
         }
         
     }
-
     public void OnDrag(PointerEventData eventData)
     {
         if (DragOut == false)
