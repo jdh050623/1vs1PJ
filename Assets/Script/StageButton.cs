@@ -118,4 +118,30 @@ public class StageButton : MonoBehaviour // 스테이지 선택창 버튼에 관련된 스크립
     {
         SceneManager.LoadScene("Stage06_1");
     }
+
+    public void Stage01_0()
+    {
+        SceneManager.LoadScene("Stage01_0");
+    }
+
+    public void Stage02_0()
+    {
+        SceneManager.LoadScene("Stage02_0");
+    }
+    public void Stage03_0()
+    {
+        SceneManager.LoadScene("Stage03_0");
+    }
+    public void Stage04_0()
+    {
+        SceneManager.LoadScene("Stage04_0");
+    }
+    public void Stage05_0()
+    {
+        SceneManager.LoadScene("Stage05_0");
+    }
+    public void Stage06_0()
+    {
+        SceneManager.LoadScene("Stage06_0");
+    }
 }
