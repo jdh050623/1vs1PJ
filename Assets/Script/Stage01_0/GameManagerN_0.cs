@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManagerN_0 : MonoBehaviour //다른 스크립트에 필요한 것을 빌려주는 스크립트 
 {
     public static GameManagerN_0 instance = null; //쓸때는 GameManagerN_0(클래스 이름).instance(지정한 이름).n_0Clear(쓸 함수,변수)
-    public GameObject GameClear;
+    public GameObject GameClear_0;
 
     public bool Second;
 
@@ -21,7 +21,7 @@ public class GameManagerN_0 : MonoBehaviour //다른 스크립트에 필요한 것을 빌려주
     {
         if (Clear == 2)
         {
-            GameClear.SetActive(true);
+            GameClear_0.SetActive(true);
             Clear = 0;
         }
     }

@@ -1674,7 +1674,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2107028117}
         m_TargetAssemblyTypeName: StageButton, Assembly-CSharp
-        m_MethodName: Stage01_0
+        m_MethodName: Stage01_1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
