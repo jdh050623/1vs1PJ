@@ -1,0 +1,22 @@
+Raccoons.png
+size:273,305
+filter:Linear,Linear
+pma:true
+scale:0.5
+꼬리
+bounds:200,170,67,133
+몸통
+bounds:2,119,184,141
+rotate:90
+수염
+bounds:2,2,156,115
+offsets:0,1,156,116
+오른 쪽 뒷발
+bounds:145,167,53,136
+오른쪽 앞발
+bounds:160,8,52,111
+왼쪽 뒷발
+bounds:145,121,44,76
+rotate:90
+왼쪽 앞발
+bounds:214,24,57,95
