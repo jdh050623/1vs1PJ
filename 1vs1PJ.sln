@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spine-unity-examples", "spine-unity-examples.csproj", "{5A9EE1F8-8CE5-208B-3D92-9B321E0F1878}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spine-unity", "spine-unity.csproj", "{69601564-E19F-E174-CDB9-62D572BC3E51}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spine-csharp", "spine-csharp.csproj", "{5BEB3AD8-CB65-6192-0D37-54451E285345}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{4527A285-25DA-4002-C385-969614422EA5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spine-unity-examples", "spine-unity-examples.csproj", "{5A9EE1F8-8CE5-208B-3D92-9B321E0F1878}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spine-unity-editor", "spine-unity-editor.csproj", "{5162D0ED-786F-DDEB-1EC3-560031F0A9F6}"
 EndProject
@@ -19,6 +19,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A9EE1F8-8CE5-208B-3D92-9B321E0F1878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A9EE1F8-8CE5-208B-3D92-9B321E0F1878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A9EE1F8-8CE5-208B-3D92-9B321E0F1878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A9EE1F8-8CE5-208B-3D92-9B321E0F1878}.Release|Any CPU.Build.0 = Release|Any CPU
 		{69601564-E19F-E174-CDB9-62D572BC3E51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{69601564-E19F-E174-CDB9-62D572BC3E51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69601564-E19F-E174-CDB9-62D572BC3E51}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -31,10 +35,6 @@ Global
 		{4527A285-25DA-4002-C385-969614422EA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4527A285-25DA-4002-C385-969614422EA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4527A285-25DA-4002-C385-969614422EA5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5A9EE1F8-8CE5-208B-3D92-9B321E0F1878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5A9EE1F8-8CE5-208B-3D92-9B321E0F1878}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5A9EE1F8-8CE5-208B-3D92-9B321E0F1878}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5A9EE1F8-8CE5-208B-3D92-9B321E0F1878}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5162D0ED-786F-DDEB-1EC3-560031F0A9F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5162D0ED-786F-DDEB-1EC3-560031F0A9F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5162D0ED-786F-DDEB-1EC3-560031F0A9F6}.Release|Any CPU.ActiveCfg = Release|Any CPU

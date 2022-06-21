@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Stage0n_0 : MonoBehaviour //스테이지 0n_0의 스폰 시스템
+public class Stage0n_0 : MonoBehaviour //스테이지 n-1 의 스폰 시스템
 {
     [Header("단어 위치")]
     public Transform[] ThreeSpawn;
@@ -11,10 +11,10 @@ public class Stage0n_0 : MonoBehaviour //스테이지 0n_0의 스폰 시스템
     public GameObject[] WordButton_1;
     public GameObject[] WordButton_2;
 
-    [Header("쓸헤기")]
+    [Header("쓰레기")]
     public int WordNum_1;
     public int WordNum_2;
-    IEnumerator coru;
+    
     public Transform TargetPos_1;
     public Transform TargetPos_2;
 
@@ -29,6 +29,8 @@ public class Stage0n_0 : MonoBehaviour //스테이지 0n_0의 스폰 시스템
     int ranPoint_1;
     int ranPoint_2;
     int ranPoint_3;
+
+    IEnumerator coru;
 
     void Start()
     {

@@ -62,6 +62,7 @@
     <Compile Include="Assets\Script\GameManager_1.cs" />
     <Compile Include="Assets\Script\Stage06.cs" />
     <Compile Include="Assets\Script\CameraFix.cs" />
+    <Compile Include="Assets\TestWould\AnimationSpeed.cs" />
     <Compile Include="Assets\Script\Screen1.cs" />
     <Compile Include="Assets\Script\Stage01_1.cs" />
     <Compile Include="Assets\TestWould\TW_Move.cs" />
@@ -81,7 +82,7 @@
     <Compile Include="Assets\Script\Spawn_1.cs" />
     <Compile Include="Assets\TestWould\TRTT.cs" />
     <Compile Include="Assets\Script\StageButton.cs" />
-    <Compile Include="Assets\TestWould\AnimationSpeed.cs" />
+    <Compile Include="Assets\Script\Hint.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Spine\version.txt" />
@@ -738,25 +739,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="spine-unity-examples-editor.csproj">
+      <Project>{BCCDCA30-AB77-CD06-A069-7341B12160B6}</Project>
+      <Name>spine-unity-examples-editor</Name>
+    </ProjectReference>
     <ProjectReference Include="spine-unity.csproj">
       <Project>{69601564-E19F-E174-CDB9-62D572BC3E51}</Project>
       <Name>spine-unity</Name>
-    </ProjectReference>
-    <ProjectReference Include="spine-csharp.csproj">
-      <Project>{5BEB3AD8-CB65-6192-0D37-54451E285345}</Project>
-      <Name>spine-csharp</Name>
-    </ProjectReference>
-    <ProjectReference Include="spine-unity-editor.csproj">
-      <Project>{5162D0ED-786F-DDEB-1EC3-560031F0A9F6}</Project>
-      <Name>spine-unity-editor</Name>
     </ProjectReference>
     <ProjectReference Include="spine-unity-examples.csproj">
       <Project>{5A9EE1F8-8CE5-208B-3D92-9B321E0F1878}</Project>
       <Name>spine-unity-examples</Name>
     </ProjectReference>
-    <ProjectReference Include="spine-unity-examples-editor.csproj">
-      <Project>{BCCDCA30-AB77-CD06-A069-7341B12160B6}</Project>
-      <Name>spine-unity-examples-editor</Name>
+    <ProjectReference Include="spine-unity-editor.csproj">
+      <Project>{5162D0ED-786F-DDEB-1EC3-560031F0A9F6}</Project>
+      <Name>spine-unity-editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="spine-csharp.csproj">
+      <Project>{5BEB3AD8-CB65-6192-0D37-54451E285345}</Project>
+      <Name>spine-csharp</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
