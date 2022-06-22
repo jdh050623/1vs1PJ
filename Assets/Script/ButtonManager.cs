@@ -87,6 +87,6 @@ public class ButtonManager : MonoBehaviour //버튼 관련 스크립트
     public void YesOutBT()
     {
         SceneManager.LoadScene("StageSelect");
-        GameManager_1.instance.ClearCount = 0;
+        //GameManager_1.instance.ClearCount = 0;
     }
 }

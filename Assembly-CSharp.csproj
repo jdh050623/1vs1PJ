@@ -57,32 +57,33 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\GameStartButton.cs" />
+    <Compile Include="Assets\Script\Hint.cs" />
     <Compile Include="Assets\Script\ButtonManager.cs" />
     <Compile Include="Assets\Script\Stage01_0\GameManagerN_0.cs" />
     <Compile Include="Assets\Script\GameManager_1.cs" />
-    <Compile Include="Assets\Script\Stage06.cs" />
+    <Compile Include="Assets\Script\Stage0n_3\Stage06.cs" />
     <Compile Include="Assets\Script\CameraFix.cs" />
     <Compile Include="Assets\TestWould\AnimationSpeed.cs" />
     <Compile Include="Assets\Script\Screen1.cs" />
     <Compile Include="Assets\Script\Stage01_1.cs" />
     <Compile Include="Assets\TestWould\TW_Move.cs" />
-    <Compile Include="Assets\Script\Stage01.cs" />
+    <Compile Include="Assets\Script\Stage0n_3\Stage01.cs" />
     <Compile Include="Assets\Script\Stage01_0\Stage0n_0.cs" />
     <Compile Include="Assets\Script\TEST1.cs" />
-    <Compile Include="Assets\Script\Stage05.cs" />
-    <Compile Include="Assets\Script\Stage03.cs" />
-    <Compile Include="Assets\Script\Stage04.cs" />
+    <Compile Include="Assets\Script\Stage0n_3\Stage05.cs" />
+    <Compile Include="Assets\Script\Stage0n_3\Stage03.cs" />
+    <Compile Include="Assets\Script\Stage0n_3\Stage04.cs" />
     <Compile Include="Assets\Script\Drag.cs" />
     <Compile Include="Assets\Script\WrongDestroy.cs" />
     <Compile Include="Assets\Script\Stage01_0\PassAnimal.cs" />
     <Compile Include="Assets\Script\TEST2.cs" />
     <Compile Include="Assets\Script\Drag2.cs" />
-    <Compile Include="Assets\Script\Stage02.cs" />
+    <Compile Include="Assets\Script\Stage0n_3\Stage02.cs" />
     <Compile Include="Assets\Script\Stage01_0\BTClick.cs" />
     <Compile Include="Assets\Script\Spawn_1.cs" />
     <Compile Include="Assets\TestWould\TRTT.cs" />
-    <Compile Include="Assets\Script\StageButton.cs" />
-    <Compile Include="Assets\Script\Hint.cs" />
+    <Compile Include="Assets\Script\Select\StageButton.cs" />
+    <Compile Include="Assets\Script\Select\StartAni.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Spine\version.txt" />

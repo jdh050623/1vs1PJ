@@ -277,6 +277,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 169610348}
   m_CullTransparentMesh: 1
+--- !u!1 &173009529 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3643453843863269283, guid: 257f206e8cd7c0849bcdcd96e81a6c59, type: 3}
+  m_PrefabInstance: {fileID: 886064928}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &267746278
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,7 +577,7 @@ Transform:
   - {fileID: 289630564}
   - {fileID: 1408935046}
   m_Father: {fileID: 739235349}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &450328654
 GameObject:
@@ -998,9 +1003,9 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1528720022}
-  - {fileID: 740995971}
   - {fileID: 431668968}
   - {fileID: 1915647840}
+  - {fileID: 740995971}
   - {fileID: 450328655}
   - {fileID: 886064929}
   - {fileID: 820069566}
@@ -1040,7 +1045,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 739235349}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1648,8 +1653,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Stage03, Assembly-CSharp
+      - m_Target: {fileID: 1407168193}
+        m_TargetAssemblyTypeName: Stage06, Assembly-CSharp
         m_MethodName: AnimalClick
         m_Mode: 1
         m_Arguments:
@@ -1972,7 +1977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66cf89f5eb5012347845ab64317891e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Out: {fileID: 0}
+  Out: {fileID: 820069565}
 --- !u!4 &1407168192
 Transform:
   m_ObjectHideFlags: 0
@@ -2001,7 +2006,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Right: {fileID: 4922087627639362653, guid: 4023a25f1945b004ea297d8e9e600376, type: 3}
   Wrong: {fileID: 5355508203085451418, guid: 09521f222bac8b84e93d5d31e1be0e14, type: 3}
-  Clear: {fileID: 0}
+  Clear: {fileID: 173009529}
 --- !u!114 &1407168194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2232,7 +2237,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1535719808}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -636, y: 358, z: 0}
+  m_LocalPosition: {x: -636, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 376966482}
@@ -2412,8 +2417,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Stage03, Assembly-CSharp
+      - m_Target: {fileID: 1407168193}
+        m_TargetAssemblyTypeName: Stage06, Assembly-CSharp
         m_MethodName: AnimalClick
         m_Mode: 1
         m_Arguments:
@@ -2669,8 +2674,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Stage03, Assembly-CSharp
+      - m_Target: {fileID: 1407168193}
+        m_TargetAssemblyTypeName: Stage06, Assembly-CSharp
         m_MethodName: AnimalClick
         m_Mode: 1
         m_Arguments:
@@ -2747,7 +2752,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 739235349}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1928567654
 GameObject:
@@ -3024,8 +3029,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Stage03, Assembly-CSharp
+      - m_Target: {fileID: 1407168193}
+        m_TargetAssemblyTypeName: Stage06, Assembly-CSharp
         m_MethodName: AnimalClick
         m_Mode: 1
         m_Arguments:
