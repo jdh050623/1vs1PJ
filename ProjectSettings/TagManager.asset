@@ -6,6 +6,15 @@ TagManager:
   tags:
   - ForestAnimals
   - CorrectAnimal
+  - MountainAnimals
+  - BeachAnimals
+  - N_IceAnimals
+  - DesertAnimals
+  - S_IceAnimals
+  - Owl
+  - n_0Animal
+  - OBJGroup
+  - OBJGroup2
   layers:
   - Default
   - TransparentFX

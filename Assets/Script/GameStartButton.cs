@@ -10,6 +10,6 @@ public class GameStartButton : MonoBehaviour
     }
     public void StartButton()//시작 버튼을 클릭시 실행
     {
-        SceneManager.LoadScene("Stage01");
+        SceneManager.LoadScene("StageSelect");
     }
 }
