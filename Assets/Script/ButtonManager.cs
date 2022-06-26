@@ -6,6 +6,12 @@ using UnityEngine.SceneManagement;
 public class ButtonManager : MonoBehaviour //버튼 관련 스크립트
 {
     public GameObject Out;
+
+
+    public void BT01_0()
+    {
+        SceneManager.LoadScene("Stage01_1");
+    }
     public void BT01_1()
     {
         SceneManager.LoadScene("Stage01_2");
@@ -14,6 +20,10 @@ public class ButtonManager : MonoBehaviour //버튼 관련 스크립트
     {
         SceneManager.LoadScene("Stage01_3");
     }
+    /*public void BT01_3()
+    {
+        //SceneManager.LoadScene("Stage02_0");
+    }*/
     public void BT02_1()
     {
         SceneManager.LoadScene("Stage02_2");

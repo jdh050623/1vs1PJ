@@ -14,6 +14,7 @@ public class Stage02 : MonoBehaviour
 
     float number_of_Correctanimals = 0; // 맞춘 동물의 수
 
+    IEnumerator coru;
     private void Update()
     {
         if (number_of_Correctanimals == 2 && ClearTrue == false)

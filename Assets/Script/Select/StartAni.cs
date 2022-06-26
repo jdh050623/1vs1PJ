@@ -5,13 +5,12 @@ using UnityEngine;
 public class StartAni : MonoBehaviour //시작 버튼을 눌렀을때 나오는 에니메이션
 {
     public GameObject Ani;
-    public GameObject StartBT;
-    public GameObject Title;
     public GameObject SelectBG;
+    public GameObject StartBG;
 
     IEnumerator coru;
 
-    bool StartBTClick = false;
+    public bool StartBTClick = false;
 
     /* // 싱글톤 //
      * instance라는 변수를 static으로 선언을 하여 다른 오브젝트 안의 스크립트에서도 instance를 불러올 수 있게 합니다 
@@ -31,22 +30,21 @@ public class StartAni : MonoBehaviour //시작 버튼을 눌렀을때 나오는 에니메이션
                 Destroy(this.gameObject); //둘 이상 존재하면 안되는 객체이니 방금 AWake된 자신을 삭제해줌
         }
     }
-    public void Update()
-    {
-        if(StartBTClick == true)
-        {
-            StartBT.SetActive(false);
-            Title.SetActive(false);
-            SelectBG.SetActive(true);
-        }
-    }
-    public void StrartBT()
-    {
+    public void StartBTGO()
+    { 
+        coru = StartAniGO();
+        Debug.Log("dd");
         Ani.SetActive(true);
-        StartBT.SetActive(false);
-        Title.SetActive(false);
-        SelectBG.SetActive(true);
+        StartCoroutine(coru);
 
+    }
+
+    IEnumerator StartAniGO()
+    {
+        yield return new WaitForSeconds(2.2f);
+        StartBG.SetActive(false);
         StartBTClick = true;
+        Ani.SetActive(false);
+        StopCoroutine(coru);
     }
 }

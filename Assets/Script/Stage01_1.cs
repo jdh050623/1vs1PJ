@@ -4,13 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Stage01_1 : MonoBehaviour
 {
+    public GameObject GameClear;
     void Update()
     {
-        //Drag2.instance.ClearCount();
-        /*Drag2.GetComponent<Drag2>().ClearCount();
-        if(ClearCount == 2)
+        if (GameManager_1.instance.ClearCount == 2)
         {
-            SceneManager.LoadScene("StageSelect");
-        }*/
+            GameClear.SetActive(true);
+        }
     }
 }
