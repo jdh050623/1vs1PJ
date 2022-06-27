@@ -93,6 +93,7 @@ public class Stage0n_0 : MonoBehaviour //스테이지 n-1 의 스폰 시스템
             
         }
     }
+
     IEnumerator timeStop()
     {
         float dTime = 0;

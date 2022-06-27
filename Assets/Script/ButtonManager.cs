@@ -20,10 +20,14 @@ public class ButtonManager : MonoBehaviour //버튼 관련 스크립트
     {
         SceneManager.LoadScene("Stage01_3");
     }
-    /*public void BT01_3()
+    public void BT01_3()
     {
-        //SceneManager.LoadScene("Stage02_0");
-    }*/
+        SceneManager.LoadScene("Stage02_0");
+    }
+    public void BT02_0()
+    {
+        SceneManager.LoadScene("Stage02_1");
+    }
     public void BT02_1()
     {
         SceneManager.LoadScene("Stage02_2");
@@ -31,6 +35,14 @@ public class ButtonManager : MonoBehaviour //버튼 관련 스크립트
     public void BT02_2()
     {
         SceneManager.LoadScene("Stage02_3");
+    }
+    public void BT02_3()
+    {
+        SceneManager.LoadScene("Stage03_0");
+    }
+    public void BT03_0()
+    {
+        SceneManager.LoadScene("Stage03_1");
     }
     public void BT03_1()
     {
@@ -40,6 +52,14 @@ public class ButtonManager : MonoBehaviour //버튼 관련 스크립트
     {
         SceneManager.LoadScene("Stage03_3");
     }
+    public void BT03_3()
+    {
+        SceneManager.LoadScene("Stage04_0");
+    }
+    public void BT04_0()
+    {
+        SceneManager.LoadScene("Stage04_1");
+    }
     public void BT04_1()
     {
         SceneManager.LoadScene("Stage04_2");
@@ -47,6 +67,14 @@ public class ButtonManager : MonoBehaviour //버튼 관련 스크립트
     public void BT04_2()
     {
         SceneManager.LoadScene("Stage04_3");
+    }
+    public void BT04_3()
+    {
+        SceneManager.LoadScene("Stage05_0");
+    }
+    public void BT05_0()
+    {
+        SceneManager.LoadScene("Stage05_1");
     }
     public void BT05_1()
     {
@@ -56,6 +84,14 @@ public class ButtonManager : MonoBehaviour //버튼 관련 스크립트
     {
         SceneManager.LoadScene("Stage05_3");
     }
+    public void BT05_3()
+    {
+        SceneManager.LoadScene("Stage06_0");
+    }
+    public void BT06_0()
+    {
+        SceneManager.LoadScene("Stage06_1");
+    }
     public void BT06_1()
     {
         SceneManager.LoadScene("Stage06_2");
@@ -64,26 +100,7 @@ public class ButtonManager : MonoBehaviour //버튼 관련 스크립트
     {
         SceneManager.LoadScene("Stage06_3");
     }
-    public void BT01_3()
-    {
-        SceneManager.LoadScene("Stage02_1");
-    }
-    public void BT02_3()
-    {
-        SceneManager.LoadScene("Stage03_1");
-    }
-    public void BT03_3()
-    {
-        SceneManager.LoadScene("Stage04_1");
-    }
-    public void BT04_3()
-    {
-        SceneManager.LoadScene("Stage05_1");
-    }
-    public void BT05_3()
-    {
-        SceneManager.LoadScene("Stage06_1");
-    }
+    
 
 
     public void OutBT()

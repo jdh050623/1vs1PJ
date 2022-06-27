@@ -56,13 +56,17 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\StageN-0\Test.cs" />
     <Compile Include="Assets\Script\GameStartButton.cs" />
     <Compile Include="Assets\Script\Hint.cs" />
     <Compile Include="Assets\Script\ButtonManager.cs" />
     <Compile Include="Assets\Script\StageN_1\GameManagerN_0.cs" />
     <Compile Include="Assets\Script\GameManager_1.cs" />
+    <Compile Include="Assets\Script\BTMouse.cs" />
     <Compile Include="Assets\Script\Stage0n_3\Stage06.cs" />
     <Compile Include="Assets\Script\CameraFix.cs" />
+    <Compile Include="Assets\Script\StageN-0\StageN_0.cs" />
+    <Compile Include="Assets\Script\StageN_1\Stage0N_01.cs" />
     <Compile Include="Assets\TestWould\AnimationSpeed.cs" />
     <Compile Include="Assets\Script\Screen1.cs" />
     <Compile Include="Assets\Script\Stage01_1.cs" />
@@ -87,8 +91,7 @@
     <Compile Include="Assets\Script\Spawn_2.cs" />
     <Compile Include="Assets\TestWould\TRTT.cs" />
     <Compile Include="Assets\Script\Select\Select_.cs" />
-    <Compile Include="Assets\Script\StageN-0\StageN_0.cs" />
-    <Compile Include="Assets\Script\StageN-0\Test.cs" />
+    <Compile Include="Assets\Script\StageN_1\Hint2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Spine\version.txt" />
