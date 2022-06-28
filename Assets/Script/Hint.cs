@@ -5,7 +5,7 @@ using UnityEngine;
 public class Hint : MonoBehaviour //힌트를 주는 스크립트
 {
     public GameObject HintOBJ;
-    public float HintTime;
+    float HintTime;
 
     bool OneSpawn;
 
@@ -13,6 +13,7 @@ public class Hint : MonoBehaviour //힌트를 주는 스크립트
     // Start is called before the first frame update
     void Start()
     {
+        HintTime = 5;
         coru = timeStop();
         StartCoroutine(coru);
         OneSpawn = false;

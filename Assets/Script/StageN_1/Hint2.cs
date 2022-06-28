@@ -5,7 +5,7 @@ using UnityEngine;
 public class Hint2 : MonoBehaviour
 {
     public GameObject HintOBJ;
-    public float HintTime;
+    float HintTime;
     public Stage0N_01 stage0N_01;
     bool HintSp = false;
     bool OneSpawn1;
@@ -15,6 +15,7 @@ public class Hint2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        HintTime = 5;
         coru1 = timeStop();
         StartCoroutine(coru1);
         OneSpawn1 = false;
