@@ -15,6 +15,7 @@ TagManager:
   - n_0Animal
   - OBJGroup
   - OBJGroup2
+  - ForestAnimals2
   layers:
   - Default
   - TransparentFX

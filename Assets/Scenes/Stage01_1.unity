@@ -3512,7 +3512,6 @@ GameObject:
   - component: {fileID: 1673871898}
   - component: {fileID: 1673871897}
   - component: {fileID: 1673871900}
-  - component: {fileID: 1673871899}
   m_Layer: 5
   m_Name: Raccons
   m_TagString: Untagged
@@ -3577,23 +3576,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1673871895}
   m_CullTransparentMesh: 1
---- !u!111 &1673871899
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1673871895}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: f90fb2b0fcd1e61478d2da7b05376e57, type: 2}
-  m_Animations:
-  - {fileID: 0}
-  - {fileID: 7400000, guid: 6d3edb4020812e545ad9f8cc7ba64683, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!212 &1673871900
 SpriteRenderer:
   m_ObjectHideFlags: 0
