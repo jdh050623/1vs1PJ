@@ -16,13 +16,16 @@ public class Select_ : MonoBehaviour // 스타트와 스테이지 선택창 버튼에 관련된 �
 
     [Header("인게임에서 뒤로 왔을때 사라져야 하는 것")]
     public GameObject StartBG;
+    public GameObject Credit;
     private void Update()
     {
         
         if (StartAni.instance.StartBTClick == true)
         {
             StartBG.SetActive(false);
-            
+            Credit.SetActive(false);
+
+
         }
     }
 
