@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class Sound : MonoBehaviour
 {
-    public GameObject SoundOn;
-    public GameObject SoundOff;
-
-    public bool isMuted = false;
-
-    public AudioSource BGM;
-
     public static Sound instance = null;
-
+    public bool isMuted = false;
 
     private void Awake()
     {
@@ -28,7 +21,7 @@ public class Sound : MonoBehaviour
         }
     }
 
-    public void SoundPlay(string SoundName,AudioClip clip)
+    public void SoundPlay(string SoundName, AudioClip clip)
     {
         GameObject go = new GameObject(SoundName + "Sound");
         AudioSource audioSource = go.AddComponent<AudioSource>();
@@ -36,21 +29,5 @@ public class Sound : MonoBehaviour
         audioSource.Play();
 
         Destroy(go, clip.length);
-    }
-
-    public void SoundOnClick()
-    {
-        SoundOn.SetActive(false);
-        SoundOff.SetActive(true);
-        isMuted = true;
-        AudioListener.pause = isMuted;
-    }
-
-    public void SoundOffClick()
-    {
-        SoundOn.SetActive(true);
-        SoundOff.SetActive(false);
-        isMuted = false;
-        AudioListener.pause = isMuted;
     }
 }

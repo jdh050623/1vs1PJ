@@ -7,6 +7,8 @@ public class StartAni : MonoBehaviour //시작 버튼을 눌렀을때 나오는 에니메이션
     public GameObject BGM;
     public AudioClip Seaclip;
 
+    public GameObject Credit;
+
     public GameObject Ani;
     public GameObject SelectBG;
     public GameObject StartBG;
@@ -38,7 +40,7 @@ public class StartAni : MonoBehaviour //시작 버튼을 눌렀을때 나오는 에니메이션
         BGM.SetActive(false);
         Sound.instance.SoundPlay("Credit", Seaclip);
         coru = StartAniGO();
-        Ani.SetActive(true);
+        Ani.SetActive(true);   
         StartCoroutine(coru);
 
     }
@@ -47,6 +49,7 @@ public class StartAni : MonoBehaviour //시작 버튼을 눌렀을때 나오는 에니메이션
     {
         yield return new WaitForSeconds(2.2f);
         StartBG.SetActive(false);
+        Credit.SetActive(false);
         StartBTClick = true;
         yield return new WaitForSeconds(0.5f);
         Ani.SetActive(false);
